@@ -1,8 +1,19 @@
 <%- include('./partials/head') %>
 
-<article>
-  <h1>Hallo wereld!</h1>
-  <p>Alles werkt! Laat dit visitekaartje in je browser aan een docent zien :D</p>
-</article>
+  <main id="main">
+    <div class="card"><img src="<%= member.avatar%>" alt="IMG_3225.jpeg">
+      <div class="text">
+        <h2 data-splitting="">About Me,</h2>
+        <p data-splitting=""><%= member.bio.html %></p>
+      </div>
+    </div>
+    <div class="card"><img src="assets/me.jpg"/>
+      <div class="text">
+        <h2 data-splitting="">The Future!</h2>
+        <p data-splitting=""> Ik vindt ICT heel intressant en ik kan niet wachten om mijn skills vergoten en uiteindelijk om een frontend te worden.</p>
+      </div>
+    </div>
+  </main>
 
-<%- include('./partials/foot') %>
+ <%- include('./partials/foot') %>
+
