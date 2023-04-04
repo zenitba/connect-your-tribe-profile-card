@@ -30,6 +30,17 @@ app.listen(app.get('port'), function () {
   // Toon een bericht in de console en geef het poortnummer door
   console.log(`Application started on http://localhost:${app.get('port')}`)
 })
+// API met alle studenten van Squat C
+const urlC = 'https://whois.fdnd.nl/api/v1/squad/squat-c-2022'
+const dataC = await fetch(urlC)
+  .then((response) => response.json())
+  .catch((error) => error)
+
+// API met random studenten
+const urlRandom = 'https://whois.fdnd.nl/api/v1/members?orderBy=name'
+const dataRandom = await fetch(urlRandom)
+  .then((response) => response.json())
+  .catch((error) => error)
 
 
 
