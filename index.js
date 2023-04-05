@@ -1,6 +1,6 @@
 // Importeer express uit de node_modules map
 import express from 'express'
-
+// api zenit url)
 const url = 'https://whois.fdnd.nl/api/v1/member/zenit-araya'
 const data = await fetch(url).then((response) => response.json())
 
@@ -16,9 +16,8 @@ app.set('views', './views')
 // Gebruik de map 'public' voor statische resources
 app.use(express.static('public'))
 
-// Maak een route voor de index
+// route naar mijn index
 app.get('/', function (req, res) {
-  // res.send('Hello World!')
   res.render('index', data)
 })
 

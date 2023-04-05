@@ -1,13 +1,13 @@
 <%- include('./partials/head') %>
 
   <main id="main">
-    <div class="card"><img src="assets/potret.jpg"/>
+    <div class="card"><img src="<%= member.avatar %>"/>
       <div class="text">
         <h2 data-splitting="">About Me,</h2>
-        <p data-splitting="">Hi ik ben  <%= member.name %> 21 jaar en ik woon ik klein dorpje Edam. ik heb 2 broers en 1 zusen ik heb zin in de opleiding.</p>
+        <p data-splitting="">Hi ik ben  <%= member.name %> <%= member.surname %>21 jaar en ik woon ik klein dorpje Edam. ik heb 2 broers en 1 zusen ik heb zin in de opleiding.</p>
       </div>
     </div>
-    <div class="card"><img src="assets/me.jpg"/>
+    <div class="card"><img src="<%= member.avatar %>"/>
       <div class="text">
         <h2 data-splitting="">The Future!</h2>
         <p data-splitting=""> Ik vindt ICT heel intressant en ik kan niet wachten om mijn skills vergoten en uiteindelijk om een frontend te worden.</p>
